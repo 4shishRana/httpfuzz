@@ -10,16 +10,18 @@ With this tool you can,
 
 
 ### Installation
-  `apt -y install wget unzip python3 python3-pip`
+
+`apt -y install wget unzip python3 python3-pip`
+
 Download and extract code
-  ```bash
+```bash
   wget https://github.com/4shishRana/httpfuzz/archive/refs/heads/master.zip -O httpfuzz.zip
   unzip httpfuzz.zip
   cd httpfuzz-master
-  ```
+```
 
 Install Python Libraries
-  `pip3 install -r requirements.txt`
+`pip3 install -r requirements.txt`
 
 
 ### Test Run
