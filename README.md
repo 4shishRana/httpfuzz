@@ -11,14 +11,14 @@ With this tool you can,
 
 ### Installation
   `apt -y install wget unzip python3 python3-pip`
-  Download and extract code
+Download and extract code
   ```bash
   wget https://github.com/4shishRana/httpfuzz/archive/refs/heads/master.zip -O httpfuzz.zip
   unzip httpfuzz.zip
   cd httpfuzz-master
   ```
 
-  Install Python Libraries
+Install Python Libraries
   `pip3 install -r requirements.txt`
 
 
