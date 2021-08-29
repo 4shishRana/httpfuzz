@@ -9,7 +9,30 @@ With this tool you can,
   - Save all HTTP responses
 
 
-httpfuzz USAGE
+### Installation
+  `apt -y install wget unzip python3 python3-pip`
+  Download and extract code
+  ```bash
+  wget https://github.com/4shishRana/httpfuzz/archive/refs/heads/master.zip -O httpfuzz.zip
+  unzip httpfuzz.zip
+  cd httpfuzz-master
+  ```
+
+  Install Python Libraries
+  `pip3 install -r requirements.txt`
+
+
+### Test Run
+
+```bash
+cd test
+python3 ../httpfuzz.py --head -t 10 -w test_wordlist.txt -u https://github.com/FUZZ/`
+```
+
+![Test Run](test/github_test_run.png "Example")
+
+
+### httpfuzz USAGE
 ```
 usage: httpfuzz.py [-h] [-w WORDLIST] [-u URL] [-H HEADER] [-t THREAD]
                    [-r REFRESH] [--redirect] [--cont] [--head]
@@ -31,14 +54,11 @@ optional arguments:
 
 
 ```
-Example
 
-`python3 ../httpfuzz.py --head -t 10 -w test_wordlist.txt -u https://github.com/FUZZ/`
-
-![Test Run](test/github_test_run.png "Example")
 
 
 Modification/Changes/ToDo
   - save full url in results
   - fix -w wordlist error
+  - Imporve --help comments
 
